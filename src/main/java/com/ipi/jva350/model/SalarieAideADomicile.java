@@ -72,7 +72,7 @@ public class SalarieAideADomicile {
      * @return
      */
     public boolean aLegalementDroitADesCongesPayes() {
-        return this.getJoursTravaillesAnneeNMoins1() > 10;
+        return this.getJoursTravaillesAnneeNMoins1() >= 10;
     }
 
     /**
@@ -115,8 +115,6 @@ public class SalarieAideADomicile {
     public boolean estHabituellementTravaille(LocalDate jour) {
         return joursHabituellementTravailles.contains(jour.getDayOfWeek());
     }
-
-
 
     public Long getId() {
         return id;
