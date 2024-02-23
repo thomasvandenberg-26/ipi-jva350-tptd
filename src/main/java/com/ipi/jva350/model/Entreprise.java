@@ -3,11 +3,12 @@ package com.ipi.jva350.model;
 import java.time.LocalDate;
 import java.util.*;
 
-public final class Entreprise {
+public class Entreprise {
 
     private static final Map<Integer, LocalDate> datePaque = new HashMap<>();
 
-    private Entreprise() {
+
+    public Entreprise() {
 
     }
 
