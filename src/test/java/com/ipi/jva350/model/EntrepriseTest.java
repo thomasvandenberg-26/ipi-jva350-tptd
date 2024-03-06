@@ -36,5 +36,11 @@ public class EntrepriseTest {
         LocalDate date = LocalDate.of(2023,3,10);
          Assertions.assertEquals(LocalDate.parse("2022-06-01"),e1.getPremierJourAnneeDeConges(date));
     }
+    @Test
+    public void getPremierJourAnneDeCongesAnnePrecedente7emeMois(){
+        Entreprise e1 = new Entreprise();
+        LocalDate date = LocalDate.of(2023,7,10);
+        Assertions.assertEquals(LocalDate.of(2024,06,01),e1.getPremierJourAnneeDeConges(date));
+    }
 
 }
