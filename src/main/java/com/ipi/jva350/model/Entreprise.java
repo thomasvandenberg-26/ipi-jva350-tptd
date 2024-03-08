@@ -146,66 +146,16 @@ public final class Entreprise {
      * @param fin date de fin de la plage
      * @return
      */
-    public static boolean estDansPlage(LocalDate d, LocalDate debut, LocalDate fin) {
-        // à implémenter en TDD !
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        boolean retour = false;
-        if (d.isAfter(debut) && d.isBefore(fin)) {
-            retour = false;
+        //J'aurais fait ça dans tous les cas
+        public static boolean estDansPlage(LocalDate d, LocalDate debut, LocalDate fin) {
+            if (debut.isAfter(fin)) {
+                throw new RuntimeException("La date de début doit être plus petite que la date de fin");
+            }
+            return !d.isBefore(debut) && !d.isAfter(fin);
         }
-        return retour;
-    }
+
+
+
 
 }
