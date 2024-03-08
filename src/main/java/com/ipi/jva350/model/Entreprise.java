@@ -7,7 +7,7 @@ public final class Entreprise {
 
     private static final Map<Integer, LocalDate> datePaque = new HashMap<>();
 
-    private Entreprise() {
+    public Entreprise() {
 
     }
 
@@ -125,7 +125,7 @@ public final class Entreprise {
 
     public static LocalDate getPremierJourAnneeDeConges(LocalDate d) {
         return d == null ? null
-                : d.getMonthValue() > 5 ? LocalDate.of(d.getMonthValue(), 6, 1)
+                : d.getMonthValue() >=6 ? LocalDate.of(d.getYear()+1, 6, 1)
                 : LocalDate.of(d.getYear() - 1, 6, 1);
     }
 

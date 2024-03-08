@@ -2,7 +2,6 @@ package com.ipi.jva350.model;
 
 import com.ipi.jva350.repository.SalarieAideADomicileRepository;
 import com.ipi.jva350.service.SalarieAideADomicileService;
-import jdk.vm.ci.meta.Local;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtendWith;
